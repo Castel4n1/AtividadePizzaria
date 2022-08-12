@@ -10,18 +10,29 @@ namespace ProjetoAtividade.Controllers
     {
         public IActionResult Index()
         {
-
             return View();
         }
+
         public IActionResult Criar()
         {
             return View();
         }
+
         public IActionResult Atualizar()
         {
             return View();
         }
+
         public IActionResult Detalhes()
+        {
+            return View();
+        }
+
+        public IActionResult Deletar()
+        {
+            return View();
+        }
+        public IActionResult ConfirmarDeletar()
         {
             return View();
         }
