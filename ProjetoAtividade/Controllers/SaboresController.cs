@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjetoAtividade.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,12 @@ namespace ProjetoAtividade.Controllers
 {
     public class SaboresController : Controller
     {
+        private SaboresController _context;
+
+        public SaboresController(SaboresController context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             return View();

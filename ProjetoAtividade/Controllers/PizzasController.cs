@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProjetoAtividade.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,30 +10,53 @@ namespace ProjetoAtividade.Controllers
 {
     public class PizzasController : Controller
     {
+        private PizzariaDbContext _context;
+
+        public PizzasController(PizzariaDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            return View(_context.Pizzas);
         }
 
-        public IActionResult Criar()
+        public IActionResult Criar() => View();
+
+        public IActionResult Atualizar(int? id)
         {
-            return View();
+            if (id == null)
+                return NotFound();
+
+            var resultado = _context.Pizzas.FirstOrDefault(p => p.Id == id);
+
+            if (resultado == null)
+                return View();
+
+            return View(resultado);
         }
 
-        public IActionResult Atualizar()
+        public IActionResult Detalhes(int id)
         {
-            return View();
+            var resultado = _context.Pizzas
+                .Include(ps => ps.PizzaSabores)
+                .ThenInclude(s => s.Sabor)
+                .FirstOrDefault(pizza => pizza.Id == id);
+
+            if (resultado == null) 
+                return View("NotFound");
+
+            return View(resultado);
         }
 
-        public IActionResult Detalhes()
+        public IActionResult Deletar(int id)
         {
-            return View();
+            var resultado = _context.Pizzas.FirstOrDefault(p => p.Id == id);
+            if (resultado == null) return View();
+            return View(resultado);
         }
-
-        public IActionResult Deletar()
-        {
-            return View();
-        }
+        [HttpPost]
         public IActionResult ConfirmarDeletar()
         {
             return View();

@@ -30,6 +30,8 @@ namespace ProjetoAtividade.Models
                 return;
 
             Nome = nome;
+
+            DataAlteracao = DateTime.Now;
         }
     }
 }

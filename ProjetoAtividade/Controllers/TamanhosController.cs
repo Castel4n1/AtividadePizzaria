@@ -8,6 +8,14 @@ namespace ProjetoAtividade.Controllers
 {
     public class TamanhosController : Controller
     {
+
+        private TamanhosController _context;
+
+        public TamanhosController(TamanhosController context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
             return View();

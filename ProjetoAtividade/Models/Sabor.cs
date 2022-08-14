@@ -35,6 +35,8 @@ namespace ProjetoAtividade.Models
             Nome = nome;
             FotoUrl = fotoUrl;
             Preco = novoPreco;
+
+            DataAlteracao = DateTime.Now;
         }
 
     }
