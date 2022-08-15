@@ -8,16 +8,16 @@ namespace ProjetoAtividade.Models
 {
     public class Tamanho : IEntidade
     {
-        public Tamanho(int id, string nome)
+        public Tamanho(int tamanhoId, string nome)
         {
-            Id = id;
+            TamanhoId = tamanhoId;
             Nome = nome;
 
             DataAlteracao = DataAlteracao;
             DataCadastro = DateTime.Now;
         }
 
-        public int Id { get; private set;  }
+        public int TamanhoId { get; private set;  }
         public string Nome { get; private set; }
         public DateTime DataAlteracao { get; private set; }
         public DateTime DataCadastro { get; private set; }

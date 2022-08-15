@@ -20,6 +20,13 @@ namespace ProjetoAtividade.Models
             DataCadastro = DateTime.Now;
         }
 
+        public Pizza(string nome, decimal preco, string fotoUrl)
+        {
+            Nome = nome;
+            Preco = preco;
+            FotoUrl = fotoUrl;
+        }
+
         public int Id { get; private set; }
         public string Nome { get; private set; }
         public string FotoUrl { get; private set; }
