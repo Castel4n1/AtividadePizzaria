@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjetoAtividade.Data;
+using ProjetoAtividade.Models;
+using ProjetoAtividade.Models.ViewModels.RequestDTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,41 +11,64 @@ namespace ProjetoAtividade.Controllers
 {
     public class TamanhosController : Controller
     {
+        private PizzariaDbContext _context;
 
-        private TamanhosController _context;
-
-        public TamanhosController(TamanhosController context)
+        public TamanhosController(PizzariaDbContext context)
         {
             _context = context;
         }
+        public IActionResult Index() => View(_context.Tamanhos);
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Detalhes(int id) => View(_context.Sabores.Find(id));
 
-        public IActionResult Criar()
+        public IActionResult Criar() => View();
+        [HttpPost]
+        public IActionResult Criar(PostTamanhosDTO tamanhoDTO)
         {
-            return View();
-        }
+            if (ModelState.IsValid) return View();
+            Tamanho tamanho = new Tamanho(tamanhoDTO.Nome);
+            _context.Add(tamanho);
+            _context.SaveChanges();
 
-        public IActionResult Atualizar()
-        {
-            return View();
+            return RedirectToAction(nameof(Index));
         }
+        public IActionResult Atualizar(int? id)
+        {
+            if (id == null) return View("not found");
 
-        public IActionResult Detalhes()
-        {
-            return View();
-        }
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
 
-        public IActionResult Deletar()
-        {
-            return View();
+            if (id == null) return View();
+
+            return View(resultado);
         }
-        public IActionResult ConfirmarDeletar()
+        [HttpPost]
+        public IActionResult Atualizar(int id, PostTamanhosDTO tamanhoDTO)
         {
-            return View();
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
+            if (ModelState.IsValid) return View(resultado);
+
+            resultado.AtualizarDados(tamanhoDTO.Nome);
+            _context.Tamanhos.Update(resultado);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
+        public IActionResult Deletar(int id)
+        {
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
+            if (resultado == null) return View();
+
+            return View(resultado);
+        }
+        [HttpPost]
+        public IActionResult ConfirmarDeletar(int id)
+        {
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
+            _context.Tamanhos.Remove(resultado);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

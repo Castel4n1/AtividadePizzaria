@@ -8,11 +8,15 @@ namespace ProjetoAtividade.Models
 {
     public class Sabor : IEntidade
     {
-        public Sabor(int saborId, string nome, decimal preco, string fotoUrl)
+        public Sabor(string nome)
+        {
+            Nome = nome;
+        }
+
+        public Sabor(int saborId, string nome, string fotoUrl)
         {
             SaborId = saborId;
             Nome = nome;
-            Preco = preco;
             FotoUrl = fotoUrl;
 
             DataAlteracao = DataAlteracao;

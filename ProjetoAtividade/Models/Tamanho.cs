@@ -8,6 +8,11 @@ namespace ProjetoAtividade.Models
 {
     public class Tamanho : IEntidade
     {
+        public Tamanho(string nome)
+        {
+            Nome = nome;
+        }
+
         public Tamanho(int tamanhoId, string nome)
         {
             TamanhoId = tamanhoId;
