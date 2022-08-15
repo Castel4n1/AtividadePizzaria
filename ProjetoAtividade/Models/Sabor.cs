@@ -8,9 +8,10 @@ namespace ProjetoAtividade.Models
 {
     public class Sabor : IEntidade
     {
-        public Sabor(string nome)
+        public Sabor(string nome, string fotoUrl)
         {
             Nome = nome;
+            FotoUrl = fotoUrl;
         }
 
         public Sabor(int saborId, string nome, string fotoUrl)
@@ -24,21 +25,19 @@ namespace ProjetoAtividade.Models
         }
         public int SaborId { get; private set; }
         public string Nome { get; private set; }
-        public decimal Preco { get; private set; }
         public string FotoUrl { get; private set; }
         public DateTime DataAlteracao { get; private set; }        
         public DateTime DataCadastro { get; private set; }
 
         public List<PizzaSabor> PizzaSabores { get; private set; }
 
-        public void AtualizarDados(string nome, string fotoUrl, decimal novoPreco)
+        public void AtualizarDados(string nome, string fotoUrl)
         {
-            if (nome.Length < 1 || novoPreco < 0)
+            if (nome.Length < 1)
                 return;
 
             Nome = nome;
             FotoUrl = fotoUrl;
-            Preco = novoPreco;
 
             DataAlteracao = DateTime.Now;
         }

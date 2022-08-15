@@ -1,3 +1,49 @@
 ﻿@model IEnumerable<Sabor>
 
-<h1>INDEX SABORES</h1>
+<div class="row">
+    <div class="col-md-10 offset-md-1">        
+        <div class="col-12 my-2">
+            <input class="form-control" type="text" name="nome" id="nome" placeholder="Buscar cinema... " />
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Ações</th>
+                    <th>Foto de Perfil</th>
+                    <th>Nome</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var sabor in Model)
+                {
+
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column">
+                                <a class="btn btn-success" asp-action="Atualizar" asp-route-id="@sabor.SaborId">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    Editar
+                                </a>
+                               
+                                <a class="btn btn-primary mt-1" asp-action="Detalhes" asp-route-id="@sabor.SaborId">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Ver
+                                </a>
+                                
+                                <a class="btn btn-danger mt-1" asp-action="Deletar" asp-route-id="@sabor.SaborId">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    Excluir
+                                </a>
+                            </div>
+                        </td>
+                        <td class="align-middle">
+                            <img src="@sabor.FotoUrl" style="max-width:100px" alt="@sabor.Nome"></td>
+                        <td class="align-middle">@sabor.Nome</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

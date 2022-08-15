@@ -14,7 +14,6 @@ namespace ProjetoAtividade.Migrations
                     SaborId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     FotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DataAlteracao = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -28,7 +27,7 @@ namespace ProjetoAtividade.Migrations
                 name: "Tamanhos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    TamanhoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DataAlteracao = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -36,7 +35,7 @@ namespace ProjetoAtividade.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tamanhos", x => x.Id);
+                    table.PrimaryKey("PK_Tamanhos", x => x.TamanhoId);
                 });
 
             migrationBuilder.CreateTable(
@@ -59,7 +58,7 @@ namespace ProjetoAtividade.Migrations
                         name: "FK_Pizzas_Tamanhos_TamanhoId",
                         column: x => x.TamanhoId,
                         principalTable: "Tamanhos",
-                        principalColumn: "Id",
+                        principalColumn: "TamanhoId",
                         onDelete: ReferentialAction.Cascade);
                 });
 

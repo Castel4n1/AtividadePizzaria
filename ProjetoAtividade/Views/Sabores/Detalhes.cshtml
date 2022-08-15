@@ -1,5 +1,11 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Sabor
+
+<div class="row">
+    <div class="col-md-2">
+        <img class="img-thumbnail" src="@Model.FotoUrl" />
+    </div>
+    <div class="col-md-10">
+        <h1>@Model.Nome</h1>
+    </div>
+
+</div>

@@ -85,9 +85,6 @@ namespace ProjetoAtividade.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(18,2)");
-
                     b.HasKey("SaborId");
 
                     b.ToTable("Sabores");
@@ -95,7 +92,7 @@ namespace ProjetoAtividade.Migrations
 
             modelBuilder.Entity("ProjetoAtividade.Models.Tamanho", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TamanhoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -109,7 +106,7 @@ namespace ProjetoAtividade.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("TamanhoId");
 
                     b.ToTable("Tamanhos");
                 });

@@ -25,7 +25,7 @@ namespace ProjetoAtividade.Controllers
         [HttpPost]
         public IActionResult Criar(PostTamanhosDTO tamanhoDTO)
         {
-            if (ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View();
             Tamanho tamanho = new Tamanho(tamanhoDTO.Nome);
             _context.Add(tamanho);
             _context.SaveChanges();
@@ -46,7 +46,7 @@ namespace ProjetoAtividade.Controllers
         public IActionResult Atualizar(int id, PostTamanhosDTO tamanhoDTO)
         {
             var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
-            if (ModelState.IsValid) return View(resultado);
+            if (!ModelState.IsValid) return View(resultado);
 
             resultado.AtualizarDados(tamanhoDTO.Nome);
             _context.Tamanhos.Update(resultado);

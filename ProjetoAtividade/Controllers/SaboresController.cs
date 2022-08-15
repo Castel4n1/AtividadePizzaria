@@ -25,8 +25,9 @@ namespace ProjetoAtividade.Controllers
         [HttpPost]
         public IActionResult Criar(PostSaboresDTO SaboresDTO)
         {
-            if (ModelState.IsValid) return View();
-            Sabor saborT = new Sabor(SaboresDTO.Nome);
+            if (!ModelState.IsValid) return View();
+            Sabor saborT = new Sabor(SaboresDTO.Nome, SaboresDTO.FotoUrl);
+
             _context.Add(saborT);
             _context.SaveChanges();
 
@@ -46,9 +47,9 @@ namespace ProjetoAtividade.Controllers
         public IActionResult Atualizar (int id, PostSaboresDTO saboresDTO)
         {
             var resultado = _context.Sabores.FirstOrDefault(s => s.SaborId == id);
-            if(ModelState.IsValid) return View(resultado);
+            if(!ModelState.IsValid) return View(resultado);
 
-            resultado.AtualizarDados(saboresDTO.Nome, saboresDTO.FotoUrl, saboresDTO.Preco);
+            resultado.AtualizarDados(saboresDTO.Nome, saboresDTO.FotoUrl);
             _context.Sabores.Update(resultado);
             _context.SaveChanges();
 
@@ -61,7 +62,7 @@ namespace ProjetoAtividade.Controllers
 
             return View(resultado);
         }
-        [HttpPost]
+        [HttpPost, ActionName("Deletar")]
         public IActionResult ConfirmarDeletar(int id)
         {
             var resultado = _context.Sabores.FirstOrDefault(s => s.SaborId == id);
