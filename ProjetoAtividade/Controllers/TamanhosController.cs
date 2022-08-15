@@ -19,7 +19,7 @@ namespace ProjetoAtividade.Controllers
         }
         public IActionResult Index() => View(_context.Tamanhos);
 
-        public IActionResult Detalhes(int id) => View(_context.Sabores.Find(id));
+        public IActionResult Detalhes(int id) => View(_context.Tamanhos.Find(id));
 
         public IActionResult Criar() => View();
         [HttpPost]

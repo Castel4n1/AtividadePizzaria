@@ -5,8 +5,10 @@
     "\\ProjetoAtividade\\Controllers",
     "\\ProjetoAtividade\\Models",
     "\\ProjetoAtividade\\Models\\ViewModels",
-    "\\ProjetoAtividade\\Models\\ViewModels\\RequestDTO"
+    "\\ProjetoAtividade\\Models\\ViewModels\\RequestDTO",
+    "\\ProjetoAtividade\\Views",
+    "\\ProjetoAtividade\\Views\\Pizzas"
   ],
-  "SelectedNode": "\\ProjetoAtividade\\Models\\ViewModels\\RequestDTO\\PostPizzasDTO.cs",
+  "SelectedNode": "\\ProjetoAtividade\\Views\\Pizzas\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

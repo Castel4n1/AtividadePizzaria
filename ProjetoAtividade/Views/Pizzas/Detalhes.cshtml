@@ -1,5 +1,72 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Pizza
+
 @{
+    ViewData["Title"] = "Detalhes da pizza";
 }
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card mb-12">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-header text-white bg-info">
+                        <p class="card-text">
+                            <h5 class="card-title">
+                                @Model.Nome
+                                <a class="text-white float-right" asp-action="Atualizar" asp-route-id="@Model.Id"><i class="fa-regular fa-pen-to-square"></i></a>
+                            </h5>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="@Model.FotoUrl" width="100%" alt="@Model.Nome">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">@Model.Nome</p>
+                        <p class="card-text">
+                            <b>Tamanho: </b>
+                            <a asp-controller="Tamanhos" asp-action="Detalhes" asp-route-id="@Model.TamanhoId">
+                                @Model.Tamanho.Nome
+                            </a>
+                        </p>
+                        <p class="card-text"><b>Estréia: </b>@Model.DataCadastro.ToString("dd MMM yy")</p>
+                        <p class="card-text"><b>Até: </b>@Model.DataAlteracao.ToString("dd MMM yy")</p>
+                        <p>
+                            <b>Situação: </b>                           
+                        </p>
+                        <p class="card-text">
+                            <b>Atores: </b>
+                            <hr />
+                            <div class="row">
+                                @foreach (var pizza_sabor in Model.PizzaSabores)
+                                {
+                                    <div class="column text-center">
+                                        <img src="@pizza_sabor.Sabor.Nome" style="max-width: 150px" />
+                                        <br />
+                                        <a asp-controller="Atores" asp-action="Detalhes" asp-route-id="@pizza_sabor.Sabor.SaborId">@pizza_sabor.Sabor.Nome</a>
+                                    </div>
+                                }
+                            </div>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card-footer">
+                        <p class="card-text">
+                            <a class="btn btn-outline-primary float-right" asp-action="Index">
+                                Lista de Filmes
+                            </a>
+                            <a class="btn btn-success text-white  @((DateTime.Now > Model.DataAlteracao) ? "disabled" : "")" 
+                               asp-controller="Pedidos" 
+                               asp-action="AdicionarCarrinho" asp-route-id="@Model.Id">
+                               <i class="fa-solid fa-cart-arrow-down"></i> Adicionar (@Model.Preco.ToString("c"))
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
