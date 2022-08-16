@@ -20,11 +20,12 @@ namespace ProjetoAtividade.Models
             DataCadastro = DateTime.Now;
         }
 
-        public Pizza(string nome, decimal preco, string fotoUrl)
+        public Pizza(string nome, decimal preco, string fotoUrl, int tamanhoId)
         {
             Nome = nome;
             Preco = preco;
             FotoUrl = fotoUrl;
+            TamanhoId = tamanhoId;
         }
 
         public int Id { get; private set; }
@@ -39,7 +40,7 @@ namespace ProjetoAtividade.Models
 
         public List<PizzaSabor> PizzaSabores { get; set; }
         
-        public void AtualizarDados(string nome, string fotoUrl, decimal novoPreco)
+        public void AtualizarDados(string nome, string fotoUrl, decimal novoPreco, int tamanhoId)
         {
             if (nome.Length < 1 || novoPreco < 0)
                 return;

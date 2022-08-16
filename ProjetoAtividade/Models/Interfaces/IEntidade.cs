@@ -7,7 +7,7 @@ namespace ProjetoAtividade.Models.Interfaces
 {
     public class IEntidade
     {
-        int id { get; }
+        int Id { get; }
         DateTime DataCadastro { get; }
         DateTime DataAlteração { get; }
     }

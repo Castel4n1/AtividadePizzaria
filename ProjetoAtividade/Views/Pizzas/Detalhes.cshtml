@@ -19,14 +19,14 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="@Model.FotoUrl" width="100%" alt="@Model.Nome">
+                    <img src="@Model.FotoUrl" width="100" alt="@Model.Nome">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
                         <p class="card-text">@Model.Nome</p>
                         <p class="card-text">
                             <b>Tamanho: </b>
-                            <a asp-controller="Tamanhos" asp-action="Detalhes" asp-route-id="@Model.TamanhoId">
+                            <a asp-controller="Pizzas" asp-action="Detalhes" asp-route-id="@Model.TamanhoId">
                                 @Model.Tamanho.Nome
                             </a>
                         </p>
@@ -44,7 +44,7 @@
                                     <div class="column text-center">
                                         <img src="@pizza_sabor.Sabor.Nome" style="max-width: 150px" />
                                         <br />
-                                        <a asp-controller="Atores" asp-action="Detalhes" asp-route-id="@pizza_sabor.Sabor.SaborId">@pizza_sabor.Sabor.Nome</a>
+                                        <a asp-controller="Pizzas" asp-action="Detalhes" asp-route-id="@pizza_sabor.Sabor.SaborId">@pizza_sabor.Sabor.Nome</a>
                                     </div>
                                 }
                             </div>

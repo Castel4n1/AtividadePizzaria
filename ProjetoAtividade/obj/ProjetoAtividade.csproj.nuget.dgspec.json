@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PRESCON\\GITHUB\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj": {}
+    "C:\\Users\\kaue.cbomfim\\Source\\Repos\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PRESCON\\GITHUB\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj": {
+    "C:\\Users\\kaue.cbomfim\\Source\\Repos\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PRESCON\\GITHUB\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
+        "projectUniqueName": "C:\\Users\\kaue.cbomfim\\Source\\Repos\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
         "projectName": "ProjetoAtividade",
-        "projectPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PRESCON\\GITHUB\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
-        "packagesPath": "C:\\Users\\mrfok\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PRESCON\\GITHUB\\AtividadePizzaria\\ProjetoAtividade\\obj\\",
+        "projectPath": "C:\\Users\\kaue.cbomfim\\Source\\Repos\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
+        "packagesPath": "C:\\Users\\kaue.cbomfim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaue.cbomfim\\Source\\Repos\\AtividadePizzaria\\ProjetoAtividade\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mrfok\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kaue.cbomfim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -79,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

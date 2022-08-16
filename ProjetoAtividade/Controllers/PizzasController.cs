@@ -29,7 +29,7 @@ namespace ProjetoAtividade.Controllers
         public IActionResult Criar(PostPizzasDTO pizzasDTO)
         {
             if (!ModelState.IsValid) return View(pizzasDTO);
-            Pizza pizza = new Pizza(pizzasDTO.Nome, pizzasDTO.Preco, pizzasDTO.FotoUrl);
+            Pizza pizza = new Pizza(pizzasDTO.Nome, pizzasDTO.Preco, pizzasDTO.FotoUrl, pizzasDTO.TamanhoId);
 
             _context.Pizzas.Add(pizza);
             _context.SaveChanges();
@@ -64,7 +64,7 @@ namespace ProjetoAtividade.Controllers
 
             if(!ModelState.IsValid) return View(resultado);
 
-            resultado.AtualizarDados(pizzasDTO.Nome, pizzasDTO.FotoUrl, pizzasDTO.Preco);
+            resultado.AtualizarDados(pizzasDTO.Nome, pizzasDTO.FotoUrl, pizzasDTO.Preco, pizzasDTO.TamanhoId);
 
             _context.Update(resultado);
             _context.SaveChanges();

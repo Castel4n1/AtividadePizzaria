@@ -1,16 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\ProjetoAtividade",
-    "\\ProjetoAtividade\\Controllers",
-    "\\ProjetoAtividade\\Models",
-    "\\ProjetoAtividade\\Models\\ViewModels",
-    "\\ProjetoAtividade\\Models\\ViewModels\\RequestDTO",
-    "\\ProjetoAtividade\\Views",
-    "\\ProjetoAtividade\\Views\\Pizzas",
-    "\\ProjetoAtividade\\Views\\Sabores",
-    "\\ProjetoAtividade\\Views\\Tamanhos"
+    ""
   ],
-  "SelectedNode": "\\ProjetoAtividade\\Views\\Sabores\\Index.cshtml",
+  "SelectedNode": "\\ProjetoAtividade.sln",
   "PreviewInSolutionExplorer": false
 }
