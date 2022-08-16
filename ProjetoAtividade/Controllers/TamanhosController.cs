@@ -61,7 +61,7 @@ namespace ProjetoAtividade.Controllers
 
             return View(resultado);
         }
-        [HttpPost]
+        [HttpPost, ActionName("Deletar")]
         public IActionResult ConfirmarDeletar(int id)
         {
             var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);

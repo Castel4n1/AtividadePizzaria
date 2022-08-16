@@ -101,5 +101,10 @@ namespace ProjetoAtividade.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        public void DadosDropdown()
+        {
+            ViewBag.Sabores = _context.Sabores.OrderBy(x => x.Nome).ToList();
+            ViewBag.Tamanhos = _context.Tamanhos.OrderBy(x => x.Nome).ToList();
+        }
     }
 }

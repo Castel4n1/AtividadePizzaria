@@ -7,8 +7,10 @@
     "\\ProjetoAtividade\\Models\\ViewModels",
     "\\ProjetoAtividade\\Models\\ViewModels\\RequestDTO",
     "\\ProjetoAtividade\\Views",
-    "\\ProjetoAtividade\\Views\\Pizzas"
+    "\\ProjetoAtividade\\Views\\Pizzas",
+    "\\ProjetoAtividade\\Views\\Sabores",
+    "\\ProjetoAtividade\\Views\\Tamanhos"
   ],
-  "SelectedNode": "\\ProjetoAtividade\\Views\\Pizzas\\Index.cshtml",
+  "SelectedNode": "\\ProjetoAtividade\\Views\\Sabores\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
