@@ -8,7 +8,7 @@ namespace ProjetoAtividade.Models
 {
     public class Pizza : IEntidade
     {
-        public Pizza(int id, string nome, string fotoUrl, decimal preco, int tamanhoId )
+        public Pizza(int id, string nome, string fotoUrl, decimal preco, int tamanhoId)
         {
             Id = id;
             Nome = nome;
@@ -48,6 +48,7 @@ namespace ProjetoAtividade.Models
             Nome = nome;
             FotoUrl = fotoUrl;
             Preco = novoPreco;
+            TamanhoId = tamanhoId;
 
             DataAlteracao = DateTime.Now;
         }

@@ -24,12 +24,6 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <p class="card-text">@Model.Nome</p>
-                        <p class="card-text">
-                            <b>Tamanho: </b>
-                            <a asp-controller="Pizzas" asp-action="Detalhes" asp-route-id="@Model.TamanhoId">
-                                @Model.Tamanho.Nome
-                            </a>
-                        </p>
                         <p class="card-text"><b>Estréia: </b>@Model.DataCadastro.ToString("dd MMM yy")</p>
                         <p class="card-text"><b>Até: </b>@Model.DataAlteracao.ToString("dd MMM yy")</p>
                         <p>
@@ -56,7 +50,7 @@
                     <div class="card-footer">
                         <p class="card-text">
                             <a class="btn btn-outline-primary float-right" asp-action="Index">
-                                Lista de Filmes
+                                Listar Pizzas
                             </a>
                             <a class="btn btn-success text-white  @((DateTime.Now > Model.DataAlteracao) ? "disabled" : "")" 
                                asp-controller="Pedidos" 

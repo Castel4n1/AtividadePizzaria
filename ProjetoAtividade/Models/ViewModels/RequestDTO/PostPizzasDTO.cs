@@ -14,8 +14,6 @@ namespace ProjetoAtividade.Models.ViewModels.RequestDTO
         public string FotoUrl { get; set; }
         public decimal Preco { get; set; }
 
-        
-
         #region relacionamento
         [Display(Name = "Informe o Sabor")]
         [Required(ErrorMessage = "Sabor é Obrigatório")]

@@ -62,7 +62,11 @@ namespace ProjetoAtividade.Controllers
         {
             var resultado = _context.Pizzas.FirstOrDefault(p => p.Id == id);
 
-            if(!ModelState.IsValid) return View(resultado);
+            if (!ModelState.IsValid)
+            {
+                DadosDropdown();
+                return View(resultado); 
+            }
 
             resultado.AtualizarDados(pizzasDTO.Nome, pizzasDTO.FotoUrl, pizzasDTO.Preco, pizzasDTO.TamanhoId);
 
