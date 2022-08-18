@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WvS9+7oStdrPODskhmn8IyksTFpDWsl8QhZemIXm0sAs8Q1SdTy0HqNG6LZPU9JOMjoI2G5vMcVqM8qQJhdPKw==",
+  "dgSpecHash": "wzkBK0+EVu0g03dZU59Bn+nIWz9iklaVGApZogm/Vb52HorILOIX3ryUY2rBzKlDpdYG8Dkwc8AcXVjmBNOdEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PRESCON\\GITHUB\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
+  "projectFilePath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrfok\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mrfok\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -23,13 +23,13 @@ namespace ProjetoAtividade.Models
             DataAlteracao = DataAlteracao;
             DataCadastro = DateTime.Now;
         }
-        public int SaborId { get; private set; }
+        public int SaborId { get; set; }
         public string Nome { get; private set; }
         public string FotoUrl { get; private set; }
         public DateTime DataAlteracao { get; private set; }        
         public DateTime DataCadastro { get; private set; }
 
-        public List<PizzaSabor> PizzaSabores { get; private set; }
+        public List<PizzaSabor> PizzaSabores { get; set; }
 
         public void AtualizarDados(string nome, string fotoUrl)
         {
