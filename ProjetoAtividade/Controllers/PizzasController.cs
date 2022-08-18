@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjetoAtividade.Data;
 using ProjetoAtividade.Models;
@@ -24,23 +25,38 @@ namespace ProjetoAtividade.Controllers
             return View(_context.Pizzas);
         }
 
-        public IActionResult Criar() => View();
+        public IActionResult Criar() 
+        {
+                DadosDropdown();
+                return View();
+        }
         [HttpPost]
         public IActionResult Criar(PostPizzasDTO pizzasDTO)
         {
-            if (!ModelState.IsValid) return View(pizzasDTO);
-            Pizza pizza = new Pizza(pizzasDTO.Nome, pizzasDTO.Preco, pizzasDTO.FotoUrl, pizzasDTO.TamanhoId);
+            if (!ModelState.IsValid)
+            {
+                DadosDropdown();
+                return View();
+            }
+            
+            Pizza pizza = new Pizza
+                (
+                    pizzasDTO.Nome, 
+                    pizzasDTO.Preco, 
+                    pizzasDTO.FotoUrl, 
+                    pizzasDTO.TamanhoId
+                );
 
             _context.Pizzas.Add(pizza);
             _context.SaveChanges();
 
-            foreach (var saborId in pizzasDTO.SaborId)
+            //Relacionamento
+            foreach (var saborId in pizzasDTO.SaborId) 
             {
                 var novoSabor = new PizzaSabor(pizza.Id, saborId);
                 _context.PizzaSabores.Add(novoSabor);
                 _context.SaveChanges();
             }
-
             return RedirectToAction(nameof(Index));
         }
 
@@ -107,8 +123,15 @@ namespace ProjetoAtividade.Controllers
         }
         public void DadosDropdown()
         {
-            ViewBag.Sabores = _context.Sabores.OrderBy(x => x.Nome).ToList();
-            ViewBag.Tamanhos = _context.Tamanhos.OrderBy(x => x.Nome).ToList();
+            var viewbag = new PostPizzaDropdown()
+            {
+                Sabores = _context.Sabores.OrderBy(s => s.Nome).ToList(),
+                Tamanhos = _context.Tamanhos.OrderBy(t => t.Nome).ToList()
+            };
+
+            ViewBag.Sabores = new SelectList(viewbag.Sabores, "Id", "Nome");
+            ViewBag.Tamanhos = new SelectList(viewbag.Tamanhos, "Id", "Nome");
         }
+    
     }
 }
