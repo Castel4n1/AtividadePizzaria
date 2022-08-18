@@ -12,16 +12,16 @@ namespace ProjetoAtividade.Models
         {
             Nome = nome;
 
-            DataAlteracao = DataAlteracao;
+            DataAlteracao = DateTime.Now;
             DataCadastro = DateTime.Now;
         }
 
-        public int TamanhoId { get; private set;  }
+        public int Id { get; private set;  }
         public string Nome { get; private set; }
         public DateTime DataAlteracao { get; private set; }
         public DateTime DataCadastro { get; private set; }
         //Relacionamento
-        public List<Pizza> Pizzas { get; private set;  }
+        public List<Pizza> Pizzas { get; set;  }
 
         public void AtualizarDados(string nome)
         {

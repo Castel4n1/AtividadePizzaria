@@ -36,7 +36,7 @@ namespace ProjetoAtividade.Controllers
         {
             if (id == null) return View("not found");
 
-            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.Id == id);
 
             if (id == null) return View();
 
@@ -45,7 +45,7 @@ namespace ProjetoAtividade.Controllers
         [HttpPost]
         public IActionResult Atualizar(int id, PostTamanhosDTO tamanhoDTO)
         {
-            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.Id == id);
             if (!ModelState.IsValid) return View(resultado);
 
             resultado.AtualizarDados(tamanhoDTO.Nome);
@@ -56,7 +56,7 @@ namespace ProjetoAtividade.Controllers
         }
         public IActionResult Deletar(int id)
         {
-            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.Id == id);
             if (resultado == null) return View();
 
             return View(resultado);
@@ -64,7 +64,7 @@ namespace ProjetoAtividade.Controllers
         [HttpPost, ActionName("Deletar")]
         public IActionResult ConfirmarDeletar(int id)
         {
-            var resultado = _context.Tamanhos.FirstOrDefault(t => t.TamanhoId == id);
+            var resultado = _context.Tamanhos.FirstOrDefault(t => t.Id == id);
             _context.Tamanhos.Remove(resultado);
             _context.SaveChanges();
 

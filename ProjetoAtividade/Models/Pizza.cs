@@ -16,11 +16,12 @@ namespace ProjetoAtividade.Models
             FotoUrl = fotoUrl;
             TamanhoId = tamanhoId;
 
-            DataAlteracao = DataAlteracao;
             DataCadastro = DateTime.Now;
+            DataAlteracao = DataCadastro;
+           
         }
 
-        public int Id { get; private set; }
+        public int Id { get; set; }
         public string Nome { get; private set; }
         public string FotoUrl { get; private set; }
         public decimal Preco { get; private set; }

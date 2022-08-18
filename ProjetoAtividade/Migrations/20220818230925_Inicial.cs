@@ -27,7 +27,7 @@ namespace ProjetoAtividade.Migrations
                 name: "Tamanhos",
                 columns: table => new
                 {
-                    TamanhoId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DataAlteracao = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -35,7 +35,7 @@ namespace ProjetoAtividade.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tamanhos", x => x.TamanhoId);
+                    table.PrimaryKey("PK_Tamanhos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -58,7 +58,7 @@ namespace ProjetoAtividade.Migrations
                         name: "FK_Pizzas_Tamanhos_TamanhoId",
                         column: x => x.TamanhoId,
                         principalTable: "Tamanhos",
-                        principalColumn: "TamanhoId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 

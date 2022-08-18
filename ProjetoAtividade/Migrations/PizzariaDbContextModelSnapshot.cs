@@ -92,7 +92,7 @@ namespace ProjetoAtividade.Migrations
 
             modelBuilder.Entity("ProjetoAtividade.Models.Tamanho", b =>
                 {
-                    b.Property<int>("TamanhoId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -106,7 +106,7 @@ namespace ProjetoAtividade.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TamanhoId");
+                    b.HasKey("Id");
 
                     b.ToTable("Tamanhos");
                 });

@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace ProjetoAtividade.Models.Interfaces
 {
-    public class IEntidade
+    public interface IEntidade
     {
         int Id { get; }
         DateTime DataCadastro { get; }
-        DateTime DataAlteração { get; }
+        DateTime DataAlteracao { get; }
     }
 }
