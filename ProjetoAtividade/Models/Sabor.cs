@@ -12,18 +12,13 @@ namespace ProjetoAtividade.Models
         {
             Nome = nome;
             FotoUrl = fotoUrl;
-        }
 
-        public Sabor(int saborId, string nome, string fotoUrl)
-        {
-            SaborId = saborId;
-            Nome = nome;
-            FotoUrl = fotoUrl;
 
             DataAlteracao = DataAlteracao;
             DataCadastro = DateTime.Now;
         }
-        public int SaborId { get; set; }
+
+        public int Id { get; set; }
         public string Nome { get; private set; }
         public string FotoUrl { get; private set; }
         public DateTime DataAlteracao { get; private set; }        

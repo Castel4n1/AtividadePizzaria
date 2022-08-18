@@ -8,17 +8,6 @@ namespace ProjetoAtividade.Models
 {
     public class Pizza : IEntidade
     {
-        public Pizza(int id, string nome, string fotoUrl, decimal preco, int tamanhoId)
-        {
-            Id = id;
-            Nome = nome;
-            FotoUrl = fotoUrl;
-            Preco = preco;
-            TamanhoId = tamanhoId;
-
-            DataAlteracao = DataAlteracao;
-            DataCadastro = DateTime.Now;
-        }
 
         public Pizza(string nome, decimal preco, string fotoUrl, int tamanhoId)
         {
@@ -26,6 +15,9 @@ namespace ProjetoAtividade.Models
             Preco = preco;
             FotoUrl = fotoUrl;
             TamanhoId = tamanhoId;
+
+            DataAlteracao = DataAlteracao;
+            DataCadastro = DateTime.Now;
         }
 
         public int Id { get; private set; }

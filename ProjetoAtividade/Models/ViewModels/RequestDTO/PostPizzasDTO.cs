@@ -26,7 +26,7 @@ namespace ProjetoAtividade.Models.ViewModels.RequestDTO
         #region relacionamento
         [Display(Name = "Informe o Sabor")]
         [Required(ErrorMessage = "Sabor é Obrigatório")]
-        public List<int> SaborId { get; set; }
+        public List<int> SaboresId { get; set; }
 
         [Display(Name = "Informe o Tamanho")]
         [Required(ErrorMessage = "Sabor é Obrigatório")]

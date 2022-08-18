@@ -37,7 +37,7 @@ namespace ProjetoAtividade.Controllers
         {
             if (id == null) return View("not found");
 
-            var resultado = _context.Sabores.FirstOrDefault(s => s.SaborId == id);
+            var resultado = _context.Sabores.FirstOrDefault(s => s.Id == id);
 
             if (id == null) return View();
 
@@ -46,7 +46,7 @@ namespace ProjetoAtividade.Controllers
         [HttpPost]
         public IActionResult Atualizar (int id, PostSaboresDTO saboresDTO)
         {
-            var resultado = _context.Sabores.FirstOrDefault(s => s.SaborId == id);
+            var resultado = _context.Sabores.FirstOrDefault(s => s.Id == id);
             if(!ModelState.IsValid) return View(resultado);
 
             resultado.AtualizarDados(saboresDTO.Nome, saboresDTO.FotoUrl);
@@ -57,7 +57,7 @@ namespace ProjetoAtividade.Controllers
         }
         public IActionResult Deletar(int id)
         {
-            var resultado = _context.Sabores.FirstOrDefault(s => s.SaborId == id);
+            var resultado = _context.Sabores.FirstOrDefault(s => s.Id == id);
             if (resultado == null) return View();
 
             return View(resultado);
@@ -65,7 +65,7 @@ namespace ProjetoAtividade.Controllers
         [HttpPost, ActionName("Deletar")]
         public IActionResult ConfirmarDeletar(int id)
         {
-            var resultado = _context.Sabores.FirstOrDefault(s => s.SaborId == id);
+            var resultado = _context.Sabores.FirstOrDefault(s => s.Id == id);
             _context.Sabores.Remove(resultado);
             _context.SaveChanges();
 

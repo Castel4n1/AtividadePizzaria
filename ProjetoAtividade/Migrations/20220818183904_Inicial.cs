@@ -11,7 +11,7 @@ namespace ProjetoAtividade.Migrations
                 name: "Sabores",
                 columns: table => new
                 {
-                    SaborId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -20,7 +20,7 @@ namespace ProjetoAtividade.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sabores", x => x.SaborId);
+                    table.PrimaryKey("PK_Sabores", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -82,7 +82,7 @@ namespace ProjetoAtividade.Migrations
                         name: "FK_PizzaSabores_Sabores_SaborId",
                         column: x => x.SaborId,
                         principalTable: "Sabores",
-                        principalColumn: "SaborId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 

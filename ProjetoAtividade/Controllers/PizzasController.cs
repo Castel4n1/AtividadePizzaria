@@ -51,7 +51,7 @@ namespace ProjetoAtividade.Controllers
             _context.SaveChanges();
 
             //Relacionamento
-            foreach (var saborId in pizzasDTO.SaborId) 
+            foreach (var saborId in pizzasDTO.SaboresId) 
             {
                 var novoSabor = new PizzaSabor(pizza.Id, saborId);
                 _context.PizzaSabores.Add(novoSabor);

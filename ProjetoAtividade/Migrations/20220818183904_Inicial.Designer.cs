@@ -10,7 +10,7 @@ using ProjetoAtividade.Data;
 namespace ProjetoAtividade.Migrations
 {
     [DbContext(typeof(PizzariaDbContext))]
-    [Migration("20220818175617_Inicial")]
+    [Migration("20220818183904_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -70,7 +70,7 @@ namespace ProjetoAtividade.Migrations
 
             modelBuilder.Entity("ProjetoAtividade.Models.Sabor", b =>
                 {
-                    b.Property<int>("SaborId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -87,7 +87,7 @@ namespace ProjetoAtividade.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("SaborId");
+                    b.HasKey("Id");
 
                     b.ToTable("Sabores");
                 });

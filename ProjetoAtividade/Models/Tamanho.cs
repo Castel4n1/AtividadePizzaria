@@ -11,12 +11,6 @@ namespace ProjetoAtividade.Models
         public Tamanho(string nome)
         {
             Nome = nome;
-        }
-
-        public Tamanho(int tamanhoId, string nome)
-        {
-            TamanhoId = tamanhoId;
-            Nome = nome;
 
             DataAlteracao = DataAlteracao;
             DataCadastro = DateTime.Now;
