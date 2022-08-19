@@ -37,7 +37,8 @@ namespace ProjetoAtividade.Controllers
         public IActionResult Criar(PostTamanhosDTO tamanhoDTO)
         {
             if (!ModelState.IsValid) return View();
-            Tamanho tamanho = new Tamanho(tamanhoDTO.Nome);
+
+            Tamanho tamanho = new (tamanhoDTO.Nome);
             _context.Add(tamanho);
             _context.SaveChanges();
 

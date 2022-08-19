@@ -24,12 +24,12 @@ namespace ProjetoAtividade.Models.ViewModels.RequestDTO
         public DateTime DataRemocao { get; set; }
 
         #region relacionamento
-        [Display(Name = "Informe o Sabor")]
-        [Required(ErrorMessage = "Sabor é Obrigatório")]
+        //[Display(Name = "Informe o Sabor")]
+        //[Required(ErrorMessage = "Sabor é Obrigatório")]
         public List<int> SaboresId { get; set; }
 
-        [Display(Name = "Informe o Tamanho")]
-        [Required(ErrorMessage = "Sabor é Obrigatório")]
+        //[Display(Name = "Informe o Tamanho")]
+        //[Required(ErrorMessage = "Sabor é Obrigatório")]
         public int TamanhoId { get; set; }
         #endregion
     }

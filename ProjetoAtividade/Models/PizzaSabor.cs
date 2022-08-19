@@ -7,15 +7,14 @@ namespace ProjetoAtividade.Models
 {
     public class PizzaSabor
     {
-        public PizzaSabor(int saborId, int pizzaId)
+        public PizzaSabor(int pizzaId, int saborId)
         {
             SaborId = saborId;
             PizzaId = pizzaId;
         }
-
-        public int SaborId { get;  set; }
-        public Sabor Sabor { get; set; }
-        public int PizzaId { get;  set; }
         public Pizza Pizza { get; set; }
+        public int PizzaId { get; set; }
+        public Sabor Sabor { get; set; }
+        public int SaborId { get; set; }
     }
 }
