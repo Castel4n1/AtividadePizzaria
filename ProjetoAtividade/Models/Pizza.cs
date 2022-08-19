@@ -22,16 +22,16 @@ namespace ProjetoAtividade.Models
         }
 
         public int Id { get; set; }
-        public string Nome { get; private set; }
-        public string FotoUrl { get; private set; }
-        public decimal Preco { get; private set; }
+        public string Nome { get;  set; }
+        public string FotoUrl { get;  set; }
+        public decimal Preco { get;  set; }
 
         //Relacionamentos
         public int TamanhoId { get; set; }
         public Tamanho Tamanho { get; set; }
 
-        public DateTime DataAlteracao { get; private set; }
-        public DateTime DataCadastro { get; private set; }
+        public DateTime DataAlteracao { get;  set; }
+        public DateTime DataCadastro { get;  set; }
 
         public List<PizzaSabor> PizzaSabores { get; set; }
         //Fecha_relacionamentos

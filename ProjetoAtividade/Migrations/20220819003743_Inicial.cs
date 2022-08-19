@@ -15,8 +15,8 @@ namespace ProjetoAtividade.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DataAlteracao = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataAlteracao = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

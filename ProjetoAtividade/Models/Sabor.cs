@@ -13,18 +13,18 @@ namespace ProjetoAtividade.Models
             Nome = nome;
             FotoUrl = fotoUrl;
 
-
-            DataAlteracao = DataAlteracao;
             DataCadastro = DateTime.Now;
+            DataAlteracao = DataCadastro;
         }
 
         public int Id { get; set; }
-        public string Nome { get; private set; }
-        public string FotoUrl { get; private set; }
-        public DateTime DataAlteracao { get; private set; }        
-        public DateTime DataCadastro { get; private set; }
+        public string Nome { get;  set; }
+        public string FotoUrl { get;  set; }
 
         public List<PizzaSabor> PizzaSabores { get; set; }
+
+        public DateTime DataCadastro { get; set; }
+        public DateTime DataAlteracao { get; set; }
 
         public void AtualizarDados(string nome, string fotoUrl)
         {
@@ -34,7 +34,6 @@ namespace ProjetoAtividade.Models
             Nome = nome;
             FotoUrl = fotoUrl;
 
-            DataAlteracao = DateTime.Now;
         }
 
     }

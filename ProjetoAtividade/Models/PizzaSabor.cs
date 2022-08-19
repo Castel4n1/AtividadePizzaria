@@ -13,9 +13,9 @@ namespace ProjetoAtividade.Models
             PizzaId = pizzaId;
         }
 
-        public int SaborId { get; private set; }
+        public int SaborId { get;  set; }
         public Sabor Sabor { get; set; }
-        public int PizzaId { get; private set; }
+        public int PizzaId { get;  set; }
         public Pizza Pizza { get; set; }
     }
 }
