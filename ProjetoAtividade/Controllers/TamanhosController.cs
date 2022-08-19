@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProjetoAtividade.Data;
 using ProjetoAtividade.Models;
 using ProjetoAtividade.Models.ViewModels.RequestDTO;
@@ -19,7 +20,17 @@ namespace ProjetoAtividade.Controllers
         }
         public IActionResult Index() => View(_context.Tamanhos);
 
-        public IActionResult Detalhes(int id) => View(_context.Tamanhos.Find(id));
+        public IActionResult Detalhes(int id) 
+        {
+            var resultado = _context.Tamanhos
+            .Include(af => af.Pizzas)
+            .FirstOrDefault(tamanho => tamanho.Id == id);
+
+            if (resultado == null)
+                return View("NotFound");
+
+            return View(resultado);
+        }
 
         public IActionResult Criar() => View();
         [HttpPost]
