@@ -17,9 +17,9 @@ namespace ProjetoAtividade.Models
             DataAlteracao = DataCadastro;
         }
 
-        public int Id { get; set; }
-        public string Nome { get;  set; }
-        public string FotoUrl { get;  set; }
+        public int Id { get; private set; }
+        public string Nome { get; private set; }
+        public string FotoUrl { get; private set; }
 
         public List<PizzaSabor> PizzaSabores { get; set; }
 

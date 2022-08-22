@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1AtMuhuEesG7cck/KyA1R8951OMB5zFGia1U5oHeIIvJXdcBuB9frkzpvO6ytYffkSHtiQrBixe+PzUuG6lCSg==",
+  "dgSpecHash": "H0EUs5pXy5BN0IjhMt7miNK3Mvl2kFtEG3qyLbELoWTdSD8ocTltb0pXQ6jc8Hk+Fk/cBc2j79VxRICtLEIHBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Atividade\\ProjetoAtividade\\ProjetoAtividade.csproj",
+  "projectFilePath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\ProjetoAtividade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrfok\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mrfok\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

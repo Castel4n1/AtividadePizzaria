@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Atividade\\ProjetoAtividade\\ProjetoAtividade.csproj": {}
+    "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\ProjetoAtividade.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Atividade\\ProjetoAtividade\\ProjetoAtividade.csproj": {
+    "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\ProjetoAtividade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Atividade\\ProjetoAtividade\\ProjetoAtividade.csproj",
+        "projectUniqueName": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\ProjetoAtividade.csproj",
         "projectName": "ProjetoAtividade",
-        "projectPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Atividade\\ProjetoAtividade\\ProjetoAtividade.csproj",
+        "projectPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\ProjetoAtividade.csproj",
         "packagesPath": "C:\\Users\\mrfok\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Atividade\\ProjetoAtividade\\obj\\",
+        "outputPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mrfok\\AppData\\Roaming\\NuGet\\NuGet.Config",

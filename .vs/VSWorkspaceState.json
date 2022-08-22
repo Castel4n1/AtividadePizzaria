@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProjetoAtividade",
+    "\\ProjetoAtividade\\Models"
   ],
-  "SelectedNode": "\\ProjetoAtividade.sln",
+  "SelectedNode": "\\ProjetoAtividade\\Models\\PizzaSabor.cs",
   "PreviewInSolutionExplorer": false
 }

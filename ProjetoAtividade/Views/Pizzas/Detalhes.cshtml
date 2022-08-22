@@ -24,13 +24,13 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <p class="card-text">@Model.Nome</p>
-                        <p class="card-text"><b>Estréia: </b>@Model.DataCadastro.ToString("dd MMM yy")</p>
+                        <p class="card-text"><b>Lançada: </b>@Model.DataCadastro.ToString("dd MMM yy")</p>
                         <p class="card-text"><b>Até: </b>@Model.DataAlteracao.ToString("dd MMM yy")</p>
                         <p>
                             <b>Situação: </b>                           
                         </p>
                         <p class="card-text">
-                            <b>Atores: </b>
+                            <b>Sabores: </b>
                             <hr />
                             <div class="row">
                                 @foreach (var pizza_sabor in Model.PizzaSabores)
