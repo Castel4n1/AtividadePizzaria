@@ -63,15 +63,28 @@ namespace ProjetoAtividade.Controllers
         public IActionResult Atualizar(int? id)
         {
             if (id == null)
-                return NotFound();
+                return View("NotFound");
 
             var resultado = _context.Pizzas
-                .Include(p => p.PizzaSabores).ThenInclude(p => p.Sabor).FirstOrDefault(p => p.Id == id);
+                .Include(p => p.PizzaSabores)
+                .ThenInclude(p => p.Sabor)
+                .FirstOrDefault(p => p.Id == id);
 
             if (resultado == null)
-                return View();
+                return View("NotFound");
 
-            return View(resultado);
+            var rest = new PostPizzasDTO()
+            {
+                Nome = resultado.Nome,
+                FotoUrl = resultado.FotoUrl,
+                Preco = resultado.Preco,
+                TamanhoId = resultado.TamanhoId,
+                SaboresId = resultado.PizzaSabores.Select(ps => ps.SaborId).ToList()
+
+            };
+
+            DadosDropdown();
+            return View(rest);
         }
         [HttpPost]
         public IActionResult Atualizar(int id, PostPizzasDTO pizzasDTO)

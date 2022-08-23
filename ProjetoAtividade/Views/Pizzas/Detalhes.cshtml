@@ -14,12 +14,18 @@
                             <h5 class="card-title">
                                 @Model.Nome
                                 <a class="text-white float-right" asp-action="Atualizar" asp-route-id="@Model.Id"><i class="fa-regular fa-pen-to-square"></i></a>
+                                <a class="btn btn-outline-danger float-right" asp-action="Atualizar" asp-route-id="@Model.Id">
+                                    Atualizar
+                                </a>
+                                <a class="btn btn-outline-danger float-right" asp-action="Deletar" asp-route-id="@Model.Id">
+                                    Excluir
+                                </a>
                             </h5>
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="@Model.FotoUrl" width="100" alt="@Model.Nome">
+                    <img src="@Model.FotoUrl" width="100%" alt="@Model.Nome">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -36,7 +42,7 @@
                                 @foreach (var pizza_sabor in Model.PizzaSabores)
                                 {
                                     <div class="column text-center">
-                                        <img src="@pizza_sabor.Sabor.Nome" style="max-width: 150px" />
+                                        <img src="@pizza_sabor.Sabor.Nome" style="max-width: 100%" />
                                         <br />
                                         <a asp-controller="Pizzas" asp-action="Detalhes" asp-route-id="@pizza_sabor.Sabor.Id">@pizza_sabor.Sabor.Nome</a>
                                     </div>
