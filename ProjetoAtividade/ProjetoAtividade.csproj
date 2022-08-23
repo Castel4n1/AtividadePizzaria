@@ -6,20 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\**" />
     <Compile Remove="Models\ViewModels\ResponseDTO\**" />
-    <Content Remove="Migrations\**" />
     <Content Remove="Models\ViewModels\ResponseDTO\**" />
-    <EmbeddedResource Remove="Migrations\**" />
     <EmbeddedResource Remove="Models\ViewModels\ResponseDTO\**" />
-    <None Remove="Migrations\**" />
     <None Remove="Models\ViewModels\ResponseDTO\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Migrations\20220819170456_Inicial.cs" />
-    <Compile Include="Migrations\20220819170456_Inicial.Designer.cs" />
-    <Compile Include="Migrations\PizzariaDbContextModelSnapshot.cs" />
   </ItemGroup>
 
   <ItemGroup>

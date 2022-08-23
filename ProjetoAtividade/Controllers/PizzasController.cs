@@ -86,7 +86,7 @@ namespace ProjetoAtividade.Controllers
             DadosDropdown();
             return View(rest);
         }
-        [HttpPost]
+        [HttpPost, ActionName("Atualizar")]
         public IActionResult Atualizar(int id, PostPizzasDTO pizzasDTO)
         {
             var resultado = _context.Pizzas.FirstOrDefault(p => p.Id == id);
@@ -97,7 +97,13 @@ namespace ProjetoAtividade.Controllers
                 return View(resultado); 
             }
 
-            resultado.AtualizarDados(pizzasDTO.Nome, pizzasDTO.FotoUrl, pizzasDTO.Preco, pizzasDTO.TamanhoId);
+            resultado.AtualizarDados
+                (
+                pizzasDTO.Nome, 
+                pizzasDTO.FotoUrl, 
+                pizzasDTO.Preco, 
+                pizzasDTO.TamanhoId
+                );
 
             _context.Update(resultado);
             _context.SaveChanges();

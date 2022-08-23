@@ -45,6 +45,7 @@ namespace ProjetoAtividade.Models
             Preco = novoPreco;
             TamanhoId = tamanhoId;
 
+            
             DataAlteracao = DateTime.Now;
         }
     }
