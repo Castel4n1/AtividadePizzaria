@@ -9,13 +9,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-warning border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Pizzas" asp-action="Index">PizzasAtividade</a>
+                <a class="navbar-brand"  asp-area="" asp-controller="Home" asp-action="Index"><img src="https://images.vexels.com/media/users/3/136312/isolated/preview/213fb725b5fbbd669093a338c9c16bdd-logo-pizza-fast-food.png" width="80"height="50">Castellani's Pizza</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
@@ -32,15 +33,19 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
+    <tbody
         <div class="container">
-            &copy; 2022 - ProjetoAtividade - <a asp-area="" asp-controller="Pizzas" asp-action="Privacy">Privacy</a>
+            <div class="col-md-12">
+                 <main role="main" class="pb-3">
+                    @RenderBody()
+                 </main>
+             </div>
+        </div>
+    </tbody>
+
+    <footer class="border-top footer text-muted bg-warning">
+        <div class="container">
+            &copy; 2022 - ProjetoAtividade - <a asp-area="" asp-controller="Home" asp-action="Privacy">Desenvolvedor Kaue Castelani</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

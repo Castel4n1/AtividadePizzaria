@@ -586,3 +586,5 @@ C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\Projeto
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Debug\net5.0\ProjetoAtividade.pdb
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Debug\net5.0\ProjetoAtividade.genruntimeconfig.cache
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Debug\net5.0\ref\ProjetoAtividade.dll
+C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs

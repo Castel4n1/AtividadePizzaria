@@ -52,7 +52,7 @@ namespace ProjetoAtividade
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Pizzas}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
             InicializadorDeDados.Inicializar(app);
