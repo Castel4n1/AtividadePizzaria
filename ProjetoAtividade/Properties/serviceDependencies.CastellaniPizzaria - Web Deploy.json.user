@@ -2,7 +2,7 @@
   "dependencies": {
     "mssql1": {
       "restored": true,
-      "restoreTime": "2022-08-23T22:36:42.2628862Z"
+      "restoreTime": "2022-08-24T18:53:59.749574Z"
     }
   },
   "parameters": {
@@ -14,7 +14,7 @@
     "mssql1.resourceGroupName": {
       "Name": "mssql1.resourceGroupName",
       "Type": "resourceGroup",
-      "Value": "GrupoSenac"
+      "Value": "SenacAtividade"
     }
   }
 }

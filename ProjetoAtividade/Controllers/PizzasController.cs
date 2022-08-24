@@ -108,6 +108,19 @@ namespace ProjetoAtividade.Controllers
             _context.Update(resultado);
             _context.SaveChanges();
 
+            //Relacionamento Atualizar Sabor
+
+            var pizzasSaboresAtual = _context.PizzaSabores.Where(ps => ps.PizzaId == resultado.Id);
+            _context.PizzaSabores.RemoveRange(pizzasSaboresAtual);
+            _context.SaveChanges();
+
+            foreach (var saborId in pizzasDTO.SaboresId)
+            {
+                var novoSabor = new PizzaSabor(resultado.Id, saborId);
+                _context.PizzaSabores.Add(novoSabor);
+                _context.SaveChanges();
+            }
+
             return RedirectToAction(nameof(Detalhes), resultado);
         }
 

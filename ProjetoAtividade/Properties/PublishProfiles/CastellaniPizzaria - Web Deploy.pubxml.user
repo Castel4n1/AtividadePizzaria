@@ -3,10 +3,10 @@
 Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
 ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
 -->
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASxIo/6Lt9kGM+MiDQVc/hwAAAAACAAAAAAADZgAAwAAAABAAAADSMlqGGWdMa7LgmxS6vorfAAAAAASAAACgAAAAEAAAAOJ0zQt58A30GSgtYo5IVgqAAAAAiU3mJ+jw6dRl6l8Wrqqn1KKsOQt+acFc9sTvkN2XfI99wLVIBRMyP752AP9RM8Jdm02FqGrzIPTru8f6cE/fsEnmqZGRsO9Gop9jN9/E76GgUEjKjRe2EFAqqONNAI8UTeG/XGYQuSLSPkElOrwWX4Sm9nPKP+BuT1qYL1GX+C4UAAAAkuWcXtY59iq0NTzJa34N/RL5nOI=</EncryptedPassword>
-    <History>False|2022-08-23T22:37:04.5506139Z;False|2022-08-23T19:36:11.5627258-03:00;</History>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFhWpuL2ow0KihsjHCX6hzgAAAAACAAAAAAAQZgAAAAEAACAAAACp05j5nwM6LMIBFcyS4FBVP5dSSDW1dgFt41U3B2i2uwAAAAAOgAAAAAIAACAAAADSVl/lZaKQ5pLoE8GDjb8xx8/jQwCM3FrX+AsFA96Jy4AAAABKB8Hl0s451X9TYXP0tBDx5CbPkRpiYVb8EKpkocNC6SKdOes4NTJDVjyXgSyjXILeNM6Hxzg9gd0Uye5j32oeP069Ay/66kLffgceOpgSyUuAbMbCaHa8kvMwwImnyNOyOdrZFxEC3bBZSZH8NMVdNYqXiUGRsjDt8PqsLJqTjkAAAABJP6luZw7rB03B8PjQE8NiN7YktT6L63D/TV8r5/vnId2ooWqIYz4l/5S5etX7AsuSsRRV8HWeda2yzsW+7iOT</EncryptedPassword>
+    <History>True|2022-08-24T18:55:11.8804540Z;</History>
   </PropertyGroup>
 </Project>
