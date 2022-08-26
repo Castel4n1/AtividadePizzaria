@@ -1,6 +1,7 @@
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Release\net5.0\PubTmp\Out\ProjetoAtividade.exe
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
+C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Release\net5.0\PubTmp\Out\wwwroot\img\6198819.jpg
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Release\net5.0\PubTmp\Out\wwwroot\js\site.js
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\mrfok\OneDrive - SENAC - SP\Área de Trabalho\Project C# DOTNET\ProjetoAtividade\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
