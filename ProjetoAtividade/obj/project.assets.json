@@ -5803,11 +5803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\ProjetoAtividade.csproj",
+      "projectUniqueName": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PROJETOS\\MEUS PROJETOS\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
       "projectName": "ProjetoAtividade",
-      "projectPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\ProjetoAtividade.csproj",
+      "projectPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PROJETOS\\MEUS PROJETOS\\AtividadePizzaria\\ProjetoAtividade\\ProjetoAtividade.csproj",
       "packagesPath": "C:\\Users\\mrfok\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\Project C# DOTNET\\ProjetoAtividade\\obj\\",
+      "outputPath": "C:\\Users\\mrfok\\OneDrive - SENAC - SP\\Área de Trabalho\\PROJETOS\\MEUS PROJETOS\\AtividadePizzaria\\ProjetoAtividade\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mrfok\\AppData\\Roaming\\NuGet\\NuGet.Config",

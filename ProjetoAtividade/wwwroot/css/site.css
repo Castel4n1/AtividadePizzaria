@@ -80,3 +80,8 @@ body {
     padding: 13px;
     color: #fff;
 }
+
+/*PIZZAS CSS*/
+.bg-info{
+    background-color: #000000!important;
+}
