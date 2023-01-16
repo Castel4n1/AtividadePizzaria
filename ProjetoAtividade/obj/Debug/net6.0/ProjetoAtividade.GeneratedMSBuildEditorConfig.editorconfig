@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjetoAtividade
+build_property.RootNamespace = ProjetoAtividade
+build_property.ProjectDir = C:\Users\mrfok\OneDrive\Área de Trabalho\GITHUBPROJECTS\AtividadePizzaria\ProjetoAtividade\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mrfok\OneDrive\Área de Trabalho\GITHUBPROJECTS\AtividadePizzaria\ProjetoAtividade
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Pizzas/Atualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl6emFzXEF0dWFsaXphci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Pizzas/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl6emFzXENyaWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Pizzas/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl6emFzXERlbGV0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Pizzas/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl6emFzXERldGFsaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Pizzas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl6emFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Sabores/Atualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fib3Jlc1xBdHVhbGl6YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Sabores/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fib3Jlc1xDcmlhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Sabores/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fib3Jlc1xEZWxldGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Sabores/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fib3Jlc1xEZXRhbGhlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Sabores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Fib3Jlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Shared/_NovoItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3ZvSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Tamanhos/Atualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFtYW5ob3NcQXR1YWxpemFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Tamanhos/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFtYW5ob3NcQ3JpYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Tamanhos/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFtYW5ob3NcRGVsZXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Tamanhos/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFtYW5ob3NcRGV0YWxoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/Tamanhos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFtYW5ob3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrfok/OneDrive/Área de Trabalho/GITHUBPROJECTS/AtividadePizzaria/ProjetoAtividade/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

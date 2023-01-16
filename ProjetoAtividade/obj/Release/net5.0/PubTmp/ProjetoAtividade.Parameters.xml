@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="castellanipizzaria" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\mrfok\\OneDrive\ -\ SENAC\ -\ SP\\Área\ de\ Trabalho\\Project\ C\#\ DOTNET\\ProjetoAtividade\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  <parameter name="IIS Web Application Name" description="" value="dotnet-csharp" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\mrfok\\OneDrive\\Área\ de\ Trabalho\\GITHUBPROJECTS\\AtividadePizzaria\\ProjetoAtividade\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
